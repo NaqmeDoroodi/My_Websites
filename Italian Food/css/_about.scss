@@ -1,0 +1,37 @@
+//variables
+$alphaColor:rgb(255, 246, 115);
+$betaColor:white;
+
+
+
+//content
+.aboutContainer
+{
+    text-align: center;
+
+    img
+    {
+        width: 100%;
+        padding: 10%;
+    }
+
+    .text
+    {
+        text-align: left;
+        margin-top: 10%;
+
+        h1
+        {
+            color: $alphaColor;
+        }
+
+        p
+        {
+            color: $betaColor;
+            margin-top: 10%;
+            line-height: 2em;
+            text-indent: 3%;
+            text-align: justify;
+        }
+    }
+}

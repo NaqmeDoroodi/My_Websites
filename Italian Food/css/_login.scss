@@ -1,0 +1,28 @@
+//variables
+$mainColor:rgb(44,44,44);
+$alphaColor:rgb(255, 246, 115);
+$betaColor:white;
+
+
+
+//login window content
+.login
+{
+    background-color: $mainColor;
+
+    h3
+    {
+        color: $alphaColor;
+    }
+
+    input
+    {
+        background-color: $mainColor;
+    }
+
+    input[type=submit]
+    {
+        background-color: $alphaColor;
+        color: $mainColor;
+    }
+}

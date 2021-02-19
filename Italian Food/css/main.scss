@@ -1,0 +1,123 @@
+// imports
+// ----------------------------------------------------------------------------------------------------
+@import "about","login";
+
+
+
+// variables
+// ----------------------------------------------------------------------------------------------------
+$mainColor:rgb(44,44,44);
+$alphaColor:rgb(255, 246, 115);
+$betaColor:white;
+
+
+
+
+// main styles
+// ----------------------------------------------------------------------------------------------------
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+body
+{
+    font-size: 100;
+    background-color: $mainColor;
+    font-family: tahoma,sans-serif;
+}
+
+
+
+
+// navbar
+// ----------------------------------------------------------------------------------------------------
+li
+{
+    border-bottom: 3px transparent solid;
+    transition: 1s;
+}
+
+li:hover
+{
+    border-bottom:3px $alphaColor solid;;
+}
+
+
+
+
+// content
+// ----------------------------------------------------------------------------------------------------
+
+// text part
+// ----------------------------------------------------------------------------------------------------
+.firstPageExplanation
+{
+    color: $betaColor;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 2em;
+    h1
+    {
+        color: $alphaColor;
+    }
+
+    span
+    {
+        color: $alphaColor;
+    }
+}
+
+
+
+// image part
+// ----------------------------------------------------------------------------------------------------
+.imageText
+{
+    img
+    {
+        border-radius: 15%;
+        margin: 10px;
+        transition: 1s;
+    }
+    
+    .explanation
+    {
+        position: absolute;
+        top: 0%;
+        z-index:1;
+        font-size: .7em;
+        padding:20px;
+        line-height: 2em;
+        display:none;
+
+        h3
+        {
+            margin-bottom: 3%;
+        }
+    }
+}
+
+.imageText:hover
+{
+    img
+    {
+        filter: brightness(20%);
+    }
+    .explanation
+    {
+        display: flex;
+        flex-direction: column;
+        
+        h3
+        {
+            color: $alphaColor;
+        }
+        p
+        {
+            color: $betaColor;
+        }
+    }
+}
